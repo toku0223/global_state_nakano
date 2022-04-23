@@ -21,7 +21,7 @@ const TopPage = () => {
                 <h1>TopPage</h1>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-                {globalState.user_data.map((user, index) => {
+                {globalState && globalState.user_data.map((user, index) => {
                     return (
                         <Card user={user} key={index} />
                     )
